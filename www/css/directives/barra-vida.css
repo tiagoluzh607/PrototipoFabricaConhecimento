@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/06/2018, 10:25:14
+    Author     : tiago
+*/
+
+.cabecalho-vida{
+    margin: 0px;
+}
+
+.vida{
+    text-align: right;
+    background-position: right;
+    background-image: url("../../img/FQ9H7A1TKO2V4KdJkbgd_vida.gif");
+    background-size: contain;
+    background-repeat: no-repeat;   
+    
+}
+
+.vida-number{
+    color: white;
+    font-size: 150%;
+    padding: 2ch;
+}
