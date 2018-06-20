@@ -26,6 +26,12 @@ angular.module('app.routes', [])
     templateUrl: 'templates/pergunta.html',
     controller: 'perguntaCtrl'
   })
+  
+  .state('nivel1', {
+    url: '/nivel1',
+    templateUrl: 'templates/pergunta.html',
+    controller: 'nivel1Ctrl'
+  })
 
   .state('acertou', {
     url: '/acertou',

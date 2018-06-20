@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : tiago
 */
 
+
 .cabecalho-vida{
     margin: 0px;
 }
@@ -24,5 +25,6 @@ and open the template in the editor.
 .vida-number{
     color: white;
     font-size: 150%;
-    padding: 2ch;
+    padding: 1ch;
+    padding-right: 1.4ch;
 }

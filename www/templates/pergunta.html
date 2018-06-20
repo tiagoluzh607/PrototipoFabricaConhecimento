@@ -1,9 +1,23 @@
 <ion-view title="Pergunta" id="page3">
   <ion-content padding="true" style="background: url(img/L4pHQH2GRlGLzFe9MnaX_backgroundPergunta.png) no-repeat center;background-size:cover;" class="has-header">
-    <div class="vida">
-      <img src="img/FQ9H7A1TKO2V4KdJkbgd_vida.gif" style="display: block; width: 20%; height: auto; margin-left: auto;">
+      <link href="../css/pergunta.css" rel="stylesheet">
+    <link href="../css/directives/barra-vida.css" rel="stylesheet">
+    <link href="../css/directives/item.css" rel="stylesheet">
+    <barra-vida numerovida="{{numerovida}}">
+            <div class="alert alert-info pergunta">
+                {{pergunta}}
+            </div>
+    </barra-vida>
+    
+    
+    <div class="spacer" style="width: 300px; height: 10%;"></div>
+    
+    <div ng-repeat="item in itens">
+        <item order="{{item.order}}" imagem="{{item.imagem}}" nome="{{item.nome}}"></item>
+        <div class="spacer" style="width: 300px; height: 30px;"></div>
     </div>
-    <div class="spacer" style="width: 300px; height: 15%;"></div>
+    <!--
+    
     <div id="pergunta-container3">
       <h1 id="pergunta-heading4" style="color:#000000;text-align:center;">Item</h1>
     </div>
@@ -11,5 +25,7 @@
     <a ui-sref="errou()" id="pergunta-button7" class="button button-assertive button-block">Errou</a>
     <a ui-sref="ganhou()" id="pergunta-button11" class="button button-calm button-block">Ganhou</a>
     <a ui-sref="gameOver()" id="pergunta-button12" class="button button-dark button-block">Game Over</a>
-  </ion-content>
+    
+    -->
+    </ion-content>
 </ion-view>
